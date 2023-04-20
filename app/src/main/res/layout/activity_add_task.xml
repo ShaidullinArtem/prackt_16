@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="15dp"
+    android:orientation="vertical"
+    tools:context=".AddTaskActivity"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:text="@string/add_task" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:background="@drawable/back_btn"-->
+<!--            android:gravity="center_vertical|center_horizontal"-->
+<!--            android:text="<"-->
+<!--            android:textColor="#fff" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <EditText
+            android:id="@+id/task_title_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/input_bg"
+            android:textColor="@color/gray"
+            android:paddingVertical="6dp"
+            android:paddingHorizontal="10dp"
+            android:inputType="text"
+
+            android:hint="Зоголовок задачи"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:background="@drawable/input_bg"
+            android:text="Введите время"
+            android:textSize="18sp"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:background="@drawable/input_bg"
+            android:text="Введите дату"
+            android:layout_marginStart="65dp"
+            android:textSize="18sp"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:background="@drawable/input_bg"
+            >
+
+            <EditText
+                android:id="@+id/task_description_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp"
+                android:hint="Описание задачи"
+                android:background="@color/white"
+                />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_task_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/primary_btn"
+            android:text="@string/add_task_button" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

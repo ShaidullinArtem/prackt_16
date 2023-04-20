@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAlarmActivity"
+    android:background="@color/primary"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="24dp">
+
+    <TableRow
+
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:text="@string/add_task" />
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:layout_width="48dp"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:background="@drawable/back_btn"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:text="<"-->
+        <!--            android:textColor="#fff" />-->
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp">
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:text="Выбериет время"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:background="@drawable/input_bg"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:text="Выбериет дату"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="18sp"
+            android:layout_gravity="end"
+            android:background="@drawable/input_bg"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="1">
+
+            <TextView
+                android:text="Повторять каждый"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox android:id="@+id/checkbox_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:backgroundTint="@color/white"
+                android:text="Понедельик" />
+
+            <CheckBox android:id="@+id/checkbox_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:text="Вторник"/>
+
+            <CheckBox android:id="@+id/checkbox_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:text="Среда"/>
+
+            <CheckBox android:id="@+id/checkbox_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:text="Четверг"/>
+
+            <CheckBox android:id="@+id/checkbox_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:text="Пятница"/>
+
+            <CheckBox android:id="@+id/checkbox_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:text="Суббота"/>
+
+
+            <CheckBox android:id="@+id/checkbox_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/orange"
+                android:text="Воскресенье"/>
+
+        </GridLayout>
+
+    </TableRow>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:rowCount="2"
+        android:columnCount="1">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_alarm"
+            android:text="@string/delete_alarm"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/danger_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_alarm"
+            android:text="@string/update_alarm"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_btn" />
+    </GridLayout>
+
+</TableLayout>

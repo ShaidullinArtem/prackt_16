@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">prackt_16</string>
+
+    <string name="add_task">Добавить задачу</string>
+    <string name="add_task_button">Записать задачу</string>
+
+    <string name="user_profile">Профиль пользователя</string>
+    <string name="user_exist">Вход не выполнен</string>
+    <string name="login_button">Вход</string>
+    <string name="register_button">Регистрация</string>
+
+    <string name="add_task_fields_exist">Заполните все поля!</string>
+    <string name="add_task_error">Ну удалось добавить задачу</string>
+    <string name="add_task_success">Задача добавлена</string>
+
+    <string name="add_alarm_success">Будильник добавлен</string>
+    <string name="add_alarm_error">Не удалось добавить будильик</string>
+    <string name="create_alarm_button">Создать будильник</string>
+    <string name="delete_alarm">Удалить будильник</string>
+    <string name="update_alarm">Сохранить будильник</string>
+    <string name="on_alarm_deleted">Сохранить удалён</string>
+    <string name="on_alarm_updated">Будильник обновлён</string>
+</resources>
